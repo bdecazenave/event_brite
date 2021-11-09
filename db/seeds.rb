@@ -36,5 +36,4 @@ puts '20 Events créés'
     event_id: Event.all.sample.id
   )
 end
-
 puts '5 réservations créées'
