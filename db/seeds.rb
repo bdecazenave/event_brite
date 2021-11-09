@@ -9,7 +9,8 @@ Attendance.destroy_all
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     description: Faker::Lorem.paragraph_by_chars,
-    email: Faker::Internet.email(domain: 'yopmail.com')
+    email: Faker::Internet.email(domain: 'yopmail.com'),
+    password:Faker::Internet.password(min_length: 8)
   )
 end
 puts '5 users créés'
