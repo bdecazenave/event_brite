@@ -10,6 +10,7 @@ end
     @user_last_name = @user.last_name
     @user_description = @user.description
     @user_email = @user.email
+    
   end
 end 
 

@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-
+  before_action :authenticate_user!, only: [:profile]
   def index
     @random_number= rand(10000)
     @user = User.all.sample
@@ -22,6 +22,10 @@ class EventsController < ApplicationController
     @event_author = @event.find_author_name
     @event_author_id = @event.admin_id.to_i
     
+  end
+
+  def create
+
   end
 
 end
