@@ -75,3 +75,4 @@ gem 'letter_opener', group: :development
 gem 'popper_js'
 gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'devise'
