@@ -73,3 +73,4 @@ end
 gem 'dotenv-rails'
 gem 'letter_opener', group: :development
 gem 'popper_js'
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
