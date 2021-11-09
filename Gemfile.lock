@@ -127,6 +127,7 @@ GEM
     parser (3.0.2.0)
       ast (~> 2.4.1)
     pg (1.2.3)
+    popper_js (2.9.3)
     public_suffix (4.0.6)
     puma (3.12.6)
     racc (1.6.0)
@@ -248,6 +249,7 @@ DEPENDENCIES
   letter_opener
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
+  popper_js
   puma (~> 3.11)
   rails (~> 5.2.6)
   rubocop-faker
