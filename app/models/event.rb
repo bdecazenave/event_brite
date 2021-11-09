@@ -24,4 +24,14 @@ class Event < ApplicationRecord
   def duration_multiple_of_5
     errors.add(:duration, 'ERREUR : la durée doit être un multiple de 5') if !duration.nil? && (duration % 5 != 0)
   end
+
+
+  def find_author_name
+    author_id = self.admin_id.to_i
+    author_array = []
+    author_array << User.find_by(id: author_id)
+    author_name = author_array[0].first_name
+    return author_name
+  end
+
 end
